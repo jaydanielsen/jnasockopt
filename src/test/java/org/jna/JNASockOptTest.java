@@ -1,6 +1,3 @@
-/*
- * Copyright (c) 2018 Valassis Digital. All rights reserved.
- */
 package org.jna;
 
 import java.io.IOException;

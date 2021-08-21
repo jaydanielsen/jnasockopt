@@ -5,4 +5,7 @@ jnasockopt.jar
 bin
 *~
 target
+<<<<<<< HEAD
 .idea
+=======
+>>>>>>> bdb5942f8a57f92db9ea767df991c830fbb20ece

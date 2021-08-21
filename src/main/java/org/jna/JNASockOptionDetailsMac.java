@@ -1,6 +1,3 @@
-/*
- * Copyright (c) 2021 Valassis Digital. All rights reserved.
- */
 package org.jna;
 
 public class JNASockOptionDetailsMac extends JNASockOptionDetails {
