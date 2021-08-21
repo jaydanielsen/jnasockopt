@@ -4,3 +4,5 @@
 jnasockopt.jar
 bin
 *~
+target
+.idea

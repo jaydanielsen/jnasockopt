@@ -10,6 +10,8 @@ Usage:
     JNASockOpt.setSockOpt(sock, JNASockOptionLevel.SOL_SOCKET, JNASockOption.SO_RCVBUF, 6553600);
     ...
     JNASockOpt.setSockOpt(sock, JNASockOptionLevel.SOL_TCP, JNASockOption.TCP_KEEPIDLE, 60);
+    ...
+    JNASockOpt.getSockOpt(sock, JNASockOptionLevel.SOL_TCP, JNASockOption.TCP_KEEPIDLE);
 
 An IOException will be thrown if the socket option is not support or if
 `jnasockopt` does not know how to support it.
@@ -18,11 +20,11 @@ See JNASockOptTest.java for examples.
 
 ## Download
 
-    $ git clone git://github.com/abligh/jnasockopt.git
+    $ git clone git://github.com/jaydanielsen/jnasockopt.git
 
 ## Building and Installation
 
-To be completed, but it should be obvious.
+    mvn clean install
 
 ## Adding support for another platform
 
@@ -45,6 +47,7 @@ Any platform other than Linux / Mac. Contributions welcome.
 ## Authors
 
 * The original code was written by Alex Bligh.
+* Refactored for maven, added support for getsockopt by Jay Danielsen.
 
 ## License
 
