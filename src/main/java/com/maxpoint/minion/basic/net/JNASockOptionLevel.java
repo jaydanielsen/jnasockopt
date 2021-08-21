@@ -1,4 +1,7 @@
-package org.jnasockopt;
+/*
+ * Copyright (c) 2021 Valassis Digital. All rights reserved.
+ */
+package com.maxpoint.minion.basic.net;
 
 // This enum contains all the socket option levels used on any platform
 // A perl script translates these into the appropriate values for each platform

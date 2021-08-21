@@ -1,4 +1,7 @@
-package org.jnasockopt;
+/*
+ * Copyright (c) 2021 Valassis Digital. All rights reserved.
+ */
+package com.maxpoint.minion.basic.net;
 
 public class JNASockOptionDetailsLinux extends JNASockOptionDetails {
 

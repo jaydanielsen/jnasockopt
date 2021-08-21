@@ -1,7 +1,9 @@
-package org.jnasockopt;
+/*
+ * Copyright (c) 2021 Valassis Digital. All rights reserved.
+ */
+package com.maxpoint.minion.basic.net;
 
-// (c) 2015 Alex Bligh
-// Released under the Apache licence - see LICENSE for details
+import com.sun.jna.Platform;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -14,39 +16,11 @@ public class JNASockOptionDetails {
     private Map<JNASockOptionLevel, Integer> levelMap;
  
 	static {
-	    String osName = System.getProperty("os.name");
-	    if (osName.startsWith("Linux")) {
+		if (Platform.isLinux()) {
 	        instance = new JNASockOptionDetailsLinux();
 	    }
-	    else if (osName.startsWith("AIX")) {
-	        // TODO: insert AIX bindings
-	    }
-	    else if (osName.startsWith("Mac") || osName.startsWith("Darwin")) {
+	    else if (Platform.isMac()) {
 	        instance = new JNASockOptionDetailsMac();
-	    }
-	    else if (osName.startsWith("Windows CE")) {
-	        // TODO: Insert Windows CE bindings
-	    }
-	    else if (osName.startsWith("Windows")) {
-	        // TODO: Insert Windows bindings
-	    }
-	    else if (osName.startsWith("Solaris") || osName.startsWith("SunOS")) {
-	        // TODO: Insert Solaris / SunOS bindings
-	    }
-	    else if (osName.startsWith("FreeBSD")) {
-	        // TODO: Insert FreeBSD bindings
-	    }
-	    else if (osName.startsWith("OpenBSD")) {
-	        // TODO: Insert OpenBSD bindings
-	    }
-	    else if (osName.equalsIgnoreCase("gnu")) {
-	        // TODO: Insert GNU bindings
-	    }
-	    else if (osName.equalsIgnoreCase("gnu/kfreebsd")) {
-	        // TODO: Insert GNU/kfreebsd bindings
-	    }
-	    else if (osName.equalsIgnoreCase("netbsd")) {
-	        // TODO: Insert NetBSD bindings
 	    }
 	    
 	    if (instance == null) {

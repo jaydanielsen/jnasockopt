@@ -1,7 +1,7 @@
-package org.jnasockopt;
-
-// This enum contains all the socket options used on any platform
-// A perl script translates these into the appropriate values for each platform
+/*
+ * Copyright (c) 2021 Valassis Digital. All rights reserved.
+ */
+package com.maxpoint.minion.basic.net;
 
 public enum JNASockOption {
 	ALG_SET_IV,
